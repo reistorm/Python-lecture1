@@ -1,25 +1,25 @@
-# # Хранение в файлах
+# Хранение в файлах
 
-# # a - добавление в файл данных, w - перезапись
-# colors = ['red', 'green', 'blue']
-# data = open('file.txt', 'a') # w - старые данные удаляются, новые записываются
-# # data.writelines(colors) # файловую переменную связали с файлом
-# data.write('\nLINE12\n')
-# data.write('LINE13\n')
-# data.close()
+# a - добавление в файл данных, w - перезапись
+colors = ['red', 'green', 'blue']
+data = open('file.txt', 'a') # w - старые данные удаляются, новые записываются
+# data.writelines(colors) # файловую переменную связали с файлом
+data.write('\nLINE12\n')
+data.write('LINE13\n')
+data.close()
 
-# exit()
-# path = 'file.txt' # путь к папке
-# data = open(path, 'r') # откроем в режиме чтения
-# for line in data:
-#     print(line) # пробежимся по файлу и считаем все строки
-# data.close() # разорвем связь файловой переменной с файлом
+exit()
+path = 'file.txt' # путь к папке
+data = open(path, 'r') # откроем в режиме чтения
+for line in data:
+    print(line) # пробежимся по файлу и считаем все строки
+data.close() # разорвем связь файловой переменной с файлом
 
-# # еще вариант добавления
+# еще вариант добавления
 
-# with open('file.txt', 'w') as data: # Не нужно закрывать файл, он сам
-#     data.write('line 1\n')
-#     data.write('line 2\n')
+with open('file.txt', 'w') as data: # Не нужно закрывать файл, он сам
+    data.write('line 1\n')
+    data.write('line 2\n')
 
 
 # Функции и модули
